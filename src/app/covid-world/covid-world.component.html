@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">World Today Details</div>
+      <div
+        class="panel-body panel-primary"
+        style="background-color: teal !important;"
+      >
+        <h3 style="color: white;">Total case :{{ worldData[0].totalCases }}</h3>
+        <h3 style="color: white;">New case :{{ worldData[0].newCases }}</h3>
+        <h3 style="color: white;">New Death:{{ worldData[0].newDeaths }}</h3>
+        <h3 style="color: white;">Critical:{{ worldData[0].serious }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div *ngFor="let elemet of worldData">
+      {{ elemet.totalCases }}
+      {{ elemet.newCases }}
+      {{ elemet.totalDeaths }}
+      {{ elemet.newDeaths }}
+      {{ elemet.totalRecovered }}
+      {{ elemet.serious }}
+      {{ elemet.totCasePerOneMPop }}
+      {{ elemet.deathsPerOneMPop }}
+      {{ elemet.testPerOneMPop }}
+      {{ elemet.population }}
+      {{ elemet.totalCases }}
+      {{ elemet.totalTest }}
+    </div>
+  </div>
+</div>
